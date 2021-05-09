@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
     "generate": "nuxt-ts generate",
     "eslint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "stylelint": "stylelint **/*.{vue,css} --ignore-path .gitignore",
