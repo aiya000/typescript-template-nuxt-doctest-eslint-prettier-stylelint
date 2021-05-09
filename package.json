@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
-    "lint": "yarn lint:js && yarn lint:style",
-    "test": "jest"
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "eslint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
+    "stylelint": "stylelint **/*.{vue,css} --ignore-path .gitignore",
+    "prettier": "prettier --check '{components,content,layouts,pages,data,types,store,test,plugins,middleware}/**/*.{ts,js,vue}' --write",
+    "lint": "yarn prettier && yarn eslint && yarn stylelint",
+    "testify": "tsdoc-testify --fileMatch '{components,content,layouts,pages,data,types,store,test,plugins,middleware}/**/*.ts'",
+    "test": "yarn testify && jest",
+    "test:watch": "watchexec --exts vue,ts --ignore '**/*.doctest.ts' --restart -- yarn test",
+    "test:clean": "rm **/*.doctest.ts",
+    "repl": "ts-node -r tsconfig-paths/register"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
