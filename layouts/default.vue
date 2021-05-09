@@ -1,8 +1,20 @@
 <template>
   <div>
-    <Nuxt />
+    <Navbar />
+
+    <div>
+      <Nuxt />
+    </div>
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import Navbar from '@/components/Navbar'
+
+@Component({ components: { Navbar } })
+export default class Default extends Vue {}
+</script>
 
 <style>
 html {
