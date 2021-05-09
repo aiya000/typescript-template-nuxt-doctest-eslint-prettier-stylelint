@@ -9,12 +9,12 @@ TODO: Put pictures onto here to explain the usage.
 
 This requires your VRChat user name and the password, but this is used only for access to VRChat API.
 
-Please check ./vrchat-friend-mover.sh if you are careful :+1:
+Please check codes of this repository and GitHub Actions workflow if you are careful :+1:
 
 ### Does this advocate my account to ban?
 
 Unfortunately, yes.  
-Using this script has a **little** possible to advocate ban.  
+Using this script has a **little** possible to advocate ban :relaxed::green_heart:  
 Please have the risk yourself, sorry.
 
 But **the possible is almost nothing** if you check 'behavior' to 'safe'.  
